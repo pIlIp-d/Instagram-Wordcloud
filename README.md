@@ -4,7 +4,7 @@
 
 ## Requirements
  ##### Python 3 (tested with Python 3.9.7)
- No deeper knowledge, just install Python 3 and install the packages below by typing `pip3 \<package-name\>` in your Terminal
+ No deeper knowledge, just install Python 3 and install the packages below by typing `pip3 <package-name>` in your Terminal
  
   #### Packages
     wordcloud, matplotlib, bs4
