@@ -17,6 +17,8 @@
 
   If you want to open an matplotlib instance instead of saving the file, you can change 'save' -> false.
 
+  For compression I use crunch afterwards [@chrissimpkins/Crunch](https://github.com/chrissimpkins/Crunch)
+  
 ## Examples
 
 This is how the standart version will look like.<br>
