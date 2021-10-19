@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 
 save = True # change to false if you just want to display the wordcloud
-'''
+
 ### reading and formating words
 print("reading categories\n")
 htmldoc = open("ads_interests.html").read()
@@ -31,8 +31,7 @@ for i in tag:
 	st = st.replace("&"," ")
 	st = st.replace("-"," ")
 	wordlist += st + ","
-'''
-wordlist = open("wo.txt").read().replace("\n",",")
+
 ### Generate a word cloud image
 print("generating wordcloud\n. . .")
 wordcloud = WordCloud().generate(wordlist)
