@@ -10,7 +10,7 @@
     wordcloud, matplotlib, bs4
 
 ## Usage
-  Download your data in html format from [Instagram](https://www.instagram.com/download/request/)
+  Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
   After a few day you will recieve an Zip file.
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
   Then start the python script with tiping 'python3 wordcloud.py' in you terminal.
