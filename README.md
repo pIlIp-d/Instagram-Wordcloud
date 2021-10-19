@@ -11,9 +11,9 @@
 
 ## Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
-  After a few day you will recieve an Zip file.
+  After a few day you will recieve a Zip file.<br>
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
-  Then start the python script with tiping 'python3 wordcloud.py' in you terminal.
+  Then start the python script with tiping `python3 <path-to-project>/wordcloud.py` in you terminal.
 
   If you want to open an matplotlib instance instead of saving the file, you can change 'save' -> false.
 
