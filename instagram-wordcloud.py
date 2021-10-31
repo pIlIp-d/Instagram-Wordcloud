@@ -60,7 +60,7 @@ if wordlist == "":
 	quit()
 ### Generate a word cloud image
 print("generating wordcloud\n. . .")
-wordcloud = WordCloud(font_path="PathwayExtreme.ttf", width=3200, height=1600, max_words=600, min_word_length=2, scale = 2).generate(wordlist)#colormap scale
+wordcloud = WordCloud(font_path="fonts/PathwayExtreme.ttf", width=3200, height=1600, max_words=600, min_word_length=2, scale = 2).generate(wordlist)#colormap scale
 plt.figure( figsize=(20,10), facecolor='k')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
