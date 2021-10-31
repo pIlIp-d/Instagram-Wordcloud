@@ -9,6 +9,19 @@
   #### Packages
    [wordcloud](https://github.com/amueller/word_cloud), [matplotlib](https://github.com/matplotlib/matplotlib), [bs4](https://beautiful-soup-4.readthedocs.io/en/latest/), [pngquant](https://github.com/kornelski/pngquant), [zopflipng](https://github.com/chrissimpkins/zopfli)
 
+#### Installation
+      
+    sudo apt install git
+   <br>
+   
+    git clone https://github.com/pIlIp-d/Instagram-wordcloud.git
+    
+    pip3 install wordcloud
+    pip3 install matplotlib
+    pip3 install bs4
+    pip3 install pngquant
+    pip3 install zopflipng
+
 ## Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
   After a few days you will recieve a Zip file.<br>
