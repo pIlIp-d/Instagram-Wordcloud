@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#by Philip Dell, MIT-Licence, v2 19.10.2021
+# ==================================================================
+#   Instagram Wordcloud -- a tool for category visualization  
+#
+#   Copyright 2021 Philip Dell
+#   MIT License
+#
+#   Source Repository: https://github.com/pIlIp-d/Instagram-wordcloud
+# ==================================================================
 
 #time
 from datetime import datetime
@@ -32,7 +39,7 @@ if exists("your_topics.html"):
 	files.append("your_topics.html")
 else:
 	print("[!] your_topics.html not found.")
-
+#formating
 for file in files:
 	print("reading "+file)
 	htmldoc = open(file).read()
