@@ -10,6 +10,15 @@
 #   Source Repository: https://github.com/pIlIp-d/Instagram-wordcloud
 # ==================================================================
 
+### options
+save = True # change to false if you just want to display the wordcloud
+max_words = 600
+compress = True
+
+#colors
+colorscheme = 0
+
+
 #time
 from datetime import datetime
 dt = datetime.now()
@@ -23,8 +32,6 @@ from bs4 import BeautifulSoup
 from os.path import exists
 
 import crunch
-
-save = True # change to false if you just want to display the wordcloud
 
 ### reading and formating words
 print("Instagram Wordcloud")
@@ -67,7 +74,7 @@ if wordlist == "":
 	quit()
 ### Generate a word cloud image
 print("generating wordcloud\n. . .")
-wordcloud = WordCloud(font_path="fonts/PathwayExtreme.ttf", width=3200, height=1600, max_words=600, min_word_length=2, scale = 2).generate(wordlist)#colormap scale
+wordcloud = WordCloud(font_path="fonts/PathwayExtreme.ttf", width=3200, height=1600, max_words=max_words, min_word_length=2, scale = 2).generate(wordlist)#colormap scale
 plt.figure( figsize=(20,10), facecolor='k')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
@@ -91,12 +98,13 @@ else:
 
 
 #compression
-print("--Compressing via Crunch--")	
-crunch.crunch(path)
-#replace with compressed file
-compressed = "interests_wordcloud_"+str(filenum)+"-crunch.png"
-os.remove(path)
-os.rename(compressed, path)
+if compress:
+	print("--Compressing via Crunch--")	
+	crunch.crunch(path)
+	#replace with compressed file
+	compressed = "interests_wordcloud_"+str(filenum)+"-crunch.png"
+	os.remove(path)
+	os.rename(compressed, path)
 
 ##time
 dt = datetime.now()
