@@ -16,7 +16,7 @@ max_words = 600
 compress = True
 
 #colors
-colorscheme = 0
+colorscheme = "Pastel2" #https://matplotlib.org/stable/gallery/color/colormap_reference.html
 
 
 #time
@@ -74,7 +74,7 @@ if wordlist == "":
 	quit()
 ### Generate a word cloud image
 print("generating wordcloud\n. . .")
-wordcloud = WordCloud(font_path="fonts/PathwayExtreme.ttf", width=3200, height=1600, max_words=max_words, min_word_length=2, scale = 2).generate(wordlist)#colormap scale
+wordcloud = WordCloud(font_path="fonts/PathwayExtreme.ttf", width=3200, height=1600, max_words=max_words, min_word_length=2, scale = 2,colormap=colorscheme).generate(wordlist)
 plt.figure( figsize=(20,10), facecolor='k')
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
@@ -108,6 +108,6 @@ if compress:
 
 ##time
 dt = datetime.now()
-print("\nProcess finished in "+str(datetime.timestamp(dt) - time)[0:5] + "seconds.")
+print("\nProcess finished in "+str(datetime.timestamp(dt) - time)[0:5] + " seconds.")
 
 print("\n--programm closed--")
