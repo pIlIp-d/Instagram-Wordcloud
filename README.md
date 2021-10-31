@@ -29,8 +29,6 @@
   Then start the python script with tiping `python3 <path-to-project>/instagram-wordcloud.py` in you terminal.
 
   #### Options in Instagram-wordcloud.py
-  
-  If you want to open an matplotlib instance instead of saving the file, you can change `save` -> false.
 
   To change the density of the words change the `max_words` value.
   
