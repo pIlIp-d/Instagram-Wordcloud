@@ -7,7 +7,7 @@
  No deeper knowledge, just install Python 3 and install the packages below by typing `pip3 <package-name>` in your Terminal
  
   #### Packages
-   [wordcloud](https://github.com/amueller/word_cloud), [matplotlib](https://github.com/matplotlib/matplotlib), [bs4](https://beautiful-soup-4.readthedocs.io/en/latest/)
+   [wordcloud](https://github.com/amueller/word_cloud), [matplotlib](https://github.com/matplotlib/matplotlib), [bs4](https://beautiful-soup-4.readthedocs.io/en/latest/),[pngquant](https://github.com/kornelski/pngquant),[zopflipng](https://github.com/chrissimpkins/zopfli)
 
 ## Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
