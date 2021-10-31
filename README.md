@@ -23,7 +23,6 @@
   ## Windows
   Windows can't compress the .png yet.
    + [Visual Studio C++ Build Tool](https://docs.microsoft.com/de-de/visualstudio/install/install-visual-studio?view=vs-2019)
-   + [Anaconda](https://www.anaconda.com/products/individual)
    + [wordcloud](https://github.com/amueller/word_cloud)
    
    ##### Open Anaconda Command Line and install wordcloud and bs4 through: 
