@@ -49,7 +49,14 @@
 # Examples
 
 This is how the standart version will look like.<br>
-![example wordcloud](./interests_wordcloud.png)
+black - cividis
+![example wordcloud](./Examples/random_example_01.png)
+white - cool
+![example wordcloud](./Examples/random_example_02.png)
+black - vividis
+![example wordcloud](./Examples/random_example_03.png)
+
+
 (I used random words.)
 
 ##### Inspirations for more wordclouds on [datacamp.com](https://www.datacamp.com/community/tutorials/wordcloud-python)
