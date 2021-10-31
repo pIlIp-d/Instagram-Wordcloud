@@ -28,9 +28,16 @@
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
   Then start the python script with tiping `python3 <path-to-project>/instagram-wordcloud.py` in you terminal.
 
-  If you want to open an matplotlib instance instead of saving the file, you can change 'save' -> false.
+  #### Options in Instagram-wordcloud.py
+  
+  If you want to open an matplotlib instance instead of saving the file, you can change `save` -> false.
 
-  For compression I use crunch afterwards [@chrissimpkins/Crunch](https://github.com/chrissimpkins/Crunch)
+  To change the density of the words change the `max_words` value.
+  
+  The colorscheme can be edited in the top. 
+  
+  To deaktivate compression change `compress` -> false.
+  I edited crunch for compression.`crunch.py` [@chrissimpkins/Crunch](https://github.com/chrissimpkins/Crunch)
   
 ## Examples
 
