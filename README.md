@@ -1,16 +1,15 @@
 # Instagram-wordcloud
   Uses the category-data from Instagram privacy export and creates a wordcloud. It convertes the abstract Data from Instagram to a really nice and visual image. It shows what Instagram knows about you in a short and easy to understand way and is weighted with the fontsizes etc to show you a part of the picture of your digital identity and hopefully helps to change the way you share your personal data and your use of social media.
 
-
-## Requirements
- ##### Python 3 (tested with Python 3.9.7)
- No deeper knowledge, just install Python 3 and install the packages below by typing `pip3 <package-name>` in your Terminal
- 
-  #### Packages
-   [wordcloud](https://github.com/amueller/word_cloud), [matplotlib](https://github.com/matplotlib/matplotlib), [bs4](https://beautiful-soup-4.readthedocs.io/en/latest/), [pngquant](https://github.com/kornelski/pngquant), [zopflipng](https://github.com/chrissimpkins/zopfli)
-
-#### Installation
-      
+  
+# Installation
+  ## Linux 
+   + [wordcloud](https://github.com/amueller/word_cloud)
+   + [matplotlib](https://github.com/matplotlib/matplotlib)
+   + [bs4](https://beautiful-soup-4.readthedocs.io/en/latest/)
+   + [pngquant](https://github.com/kornelski/pngquant)
+   + [zopflipng](https://github.com/chrissimpkins/zopfli)
+   
     sudo apt install git
    <br>
    
@@ -21,13 +20,24 @@
     pip3 install bs4
     pip3 install pngquant
     pip3 install zopflipng
-
+  ## Windows
+  Windows can't compress the .png yet.
+   + [Visual Studio C++ Build Tool](https://docs.microsoft.com/de-de/visualstudio/install/install-visual-studio?view=vs-2019)
+   + [Anaconda](https://www.anaconda.com/products/individual)
+   + [wordcloud](https://github.com/amueller/word_cloud)
+   
+   ##### Open Anaconda Command Line and install wordcloud and bs4 through: 
+    python3 -m pip install wordcloud
+    python3 -m pip install bs4
+    cd <package_path>\Instagram-wordcloud
+  
 ## Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
   After a few days you will recieve a Zip file.<br>
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
   Then start the python script with tiping `python3 <path-to-project>/instagram-wordcloud.py` in you terminal.
-
+  It will take a while. And when it finished you can safely open the file.
+  
   #### Options in Instagram-wordcloud.py
 
   To change the density of the words change the `max_words` value.
