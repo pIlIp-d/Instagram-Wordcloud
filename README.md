@@ -25,7 +25,7 @@
    + [Visual Studio C++ Build Tool](https://docs.microsoft.com/de-de/visualstudio/install/install-visual-studio?view=vs-2019)
    + [wordcloud](https://github.com/amueller/word_cloud)
    
-   ##### Open Anaconda or a normal Command Line and install wordcloud and bs4 through: 
+   ##### Open your Command Line (or Anaconda) and install wordcloud and bs4 through: 
     python3 -m pip install wordcloud
     python3 -m pip install bs4
     cd <package_path>\Instagram-Wordcloud
