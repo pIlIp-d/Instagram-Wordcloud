@@ -49,11 +49,11 @@
 # Examples
 
 This is how the standart version will look like.<br>
-black - cividis
+##### Black - cividis
 ![example wordcloud](./Examples/random_example_01.png)
-white - cool
+##### White - cool
 ![example wordcloud](./Examples/random_example_02.png)
-black - vividis
+##### Black - vividis
 ![example wordcloud](./Examples/random_example_03.png)
 
 
