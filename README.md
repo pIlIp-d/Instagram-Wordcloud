@@ -1,7 +1,6 @@
 # Instagram-Wordcloud
   Uses the category-data from Instagram privacy export and creates a wordcloud. It convertes the abstract Data from Instagram to a really nice and visual image. It shows what Instagram knows about you in a short and easy to understand way and is weighted with the fontsizes etc to show you a part of the picture of your digital identity and hopefully helps to change the way you share your personal data and your use of social media.
 
-  
 # Installation
   ## Linux 
    + [wordcloud](https://github.com/amueller/word_cloud)
@@ -30,7 +29,7 @@
     python3 -m pip install bs4
     cd <package_path>\Instagram-Wordcloud
   
-## Usage
+# Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
   After a few days you will recieve a Zip file.<br>
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
@@ -46,7 +45,7 @@
   To deaktivate compression change `compress` -> false.
   I edited crunch for compression.`crunch.py` [@chrissimpkins/Crunch](https://github.com/chrissimpkins/Crunch)
   
-## Examples
+# Examples
 
 This is how the standart version will look like.<br>
 ![example wordcloud](./interests_wordcloud.png)
