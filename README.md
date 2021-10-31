@@ -13,7 +13,7 @@
     sudo apt install git
    <br>
    
-    git clone https://github.com/pIlIp-d/Instagram-wordcloud.git
+    git clone https://github.com/pIlIp-d/Instagram-Wordcloud.git
     
     pip3 install wordcloud
     pip3 install matplotlib
@@ -29,13 +29,13 @@
    ##### Open Anaconda Command Line and install wordcloud and bs4 through: 
     python3 -m pip install wordcloud
     python3 -m pip install bs4
-    cd <package_path>\Instagram-wordcloud
+    cd <package_path>\Instagram-Wordcloud
   
 ## Usage
   Download your data in html format from [Instagram](https://www.instagram.com/download/request/).
   After a few days you will recieve a Zip file.<br>
   Unpack your Data export and copy '/information_about_you/ads_interests.html' into the project folder.
-  Then start the python script with tiping `python3 <path-to-project>/instagram-wordcloud.py` in you terminal.
+  Then start the python script with tiping `python3 <path-to-project>/Instagram-Wordcloud.py` in you terminal.
   It will take a while. And when it finished you can safely open the file.
   
   #### Options in Instagram-wordcloud.py
