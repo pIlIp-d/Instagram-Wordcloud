@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 # ==================================================================
 #   Instagram Wordcloud -- a tool for category visualization  
 #
@@ -94,12 +92,11 @@ def format(files):
 
 def create_wordcloud(wordlist, path):
 	print("generating wordcloud\n. . .")
-	wordcloud = WordCloud(
+	WordCloud(
 		font_path="fonts/PathwayExtreme.ttf", 
 		width=3200, height=1600, max_words=MAX_WORDS, min_word_length=2, scale = 2,
 		colormap=COLORSCHEME, background_color=BACKGROUND
-	).generate(wordlist)
-	wordcloud.to_file(path)
+	).generate(wordlist).to_file(path)
 	print("--wordcloud saved--")
 
 def get_path():
@@ -129,8 +126,9 @@ def __main__():
 
 	path, filenum = get_path()
 	create_wordcloud(wordlist, path)
-	if compress:
-		compresser(filenum)
+
+	if not os.name == 'nt' and compress:#compression doesnt work on windows
+		compresser(path,filenum)
 
 	dt = datetime.now()
 	print("\nProcess finished in "+str(datetime.timestamp(dt) - time)[0:5] + " seconds.")
