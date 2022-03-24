@@ -133,4 +133,5 @@ def __main__():
 	dt = datetime.now()
 	print("\nProcess finished in "+str(datetime.timestamp(dt) - time)[0:5] + " seconds.")
 	print("\n--programm closed--")
-__main__()
+if __name__ == '__main__':
+	__main__()
